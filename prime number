@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+        int numOfDiv = 0;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("enter a positive integer: ");
+        int num = inp.nextInt();
+        for (int i = 0; i <= num/2; i++) {
+            i++;
+            if(num % i == 0)
+            {
+                numOfDiv++; 
+            }
+        }
+        if(numOfDiv > 1)
+        {
+            System.out.println("not");
+        }
+        else
+        {
+            System.out.println("prime");
+        }
+        inp.close();
